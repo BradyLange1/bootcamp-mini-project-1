@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color:bisque;
+}
+
+header {
+    padding: 20px;
+    background-color:coral;
+    display:flex;
+    justify-content: space-between;
+}
+
+#BradstaFeesh{
+    font-size: 50px;
+    padding: 0px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline;
+}
+
+.float-right {
+    justify-content: end;
+}
+
+header a{
+    margin: 10px 10px;
+    font-size: 26px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor:grab;
+    color: black;
+}
+
+header a:hover{
+    padding: 0px;
+    color: blue;
+}
+
+header a:active{
+    color: white;
+    cursor: grabbing;
+}
+
+main h1 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header img {
+    position: relative;
+    top: 10px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+figure {
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+main img {
+    width: 300px;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav,
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
